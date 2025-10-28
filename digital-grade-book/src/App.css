@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -64,6 +68,7 @@
 
 body{
   background-color: rgb(223, 223, 223);
+  background-size: 100% 100%;
 }
 
 .card-body{
@@ -73,5 +78,15 @@ body{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  user-select: none;
+}
 
+.card-body:hover{
+  transform: scale(1.02);
+}
+
+.card-text{
+  cursor: none;
 }
